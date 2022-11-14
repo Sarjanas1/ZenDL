@@ -1,0 +1,10 @@
+.env
+.cache
+roft.txt
+.DS_Store
+*.session
+raw_files/
+search/
+downloads/
+__pycache__/
+*.session-journal
