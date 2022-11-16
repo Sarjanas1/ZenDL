@@ -50,16 +50,13 @@ async def lyrics(_, m: types.Message):
     try:
         kb = types.InlineKeyboardMarkup([
             [types.InlineKeyboardButton(text=f"🎵 {r.title[:20]}", url=f"{telegraphurl}")]]
+        )       
+        await self.send_message(
+            m.chat.id,
+            text=caption,
+            disable_web_page_preview=True,
+            reply_markup=kb
         )
-        if r.song_art_image_url:
-            await self.send_message(
-                m.chat.id,
-                text=caption,
-                disable_web_page_preview=True,
-                reply_markup=kb
-            )
-        else:
-            await self.send_message(m.chat.id, f"<a href='{r.url}'>{r.title} - {artist}\n\n{r.lyrics}", disable_web_page_preview=True)
     except Exception as e:
         return await m.reply_text(str(e))
 
