@@ -1,1 +1,1 @@
-belum jadi sih ini sbnrnya 
+belum jadi sih ini sbnrnya, berani publik karna punya sendiri
