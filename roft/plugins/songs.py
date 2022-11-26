@@ -1,4 +1,4 @@
-# Copyright (c) 2018-2022 Shin-yue
+# Copyright (c) kontol 2022 Shin-yue
 
 import io
 import os
