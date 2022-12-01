@@ -61,8 +61,7 @@ async def tiktok(_, m: types.Message):
         video = val.downloader(url=value, output_name='video.mp4')
         video_id = open('video.mp4', 'rb')
 
-        if video:
-            user_id = m.from_user.id
+        if video:         
             await self.send_video(m.chat.id, video_id, caption=constants.message_28)  
         else:
             await message_wait.edit(constants.message_30)
