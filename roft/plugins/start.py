@@ -37,6 +37,12 @@ async def help(_, m: types.Message):
     return await m.reply_text(constants.message_3)
 
 
+@self.on_message(filters.command('source'))
+async def source(_, m: types.Message):
+    text = 'https://github.com/Shin-yue/YueDL'
+    await m.reply_text(text)
+
+
 @self.on_callback_query(filters.regex(pattern=r'self_'))
 async def cb_button(_, c: types.CallbackQuery):
     value = c.data.replace('self_', '')
@@ -59,5 +65,4 @@ async def cb_button(_, c: types.CallbackQuery):
             reply_markup=constants.keyboard
         )
 
-    await c.answer()
-    return           
+    await c.answer()          
