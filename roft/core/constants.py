@@ -22,7 +22,8 @@ message_3 = (
     "Pinterest has 3 types of media such as: Image, GIF, video.\n"
     "You just copy the link from pinterest to me by using the /pints [pint link] command.\n\n"
     "<b>Wikipedia command:</b>\n"
-    "Just type /wiki [word] and I will look it up on Wikipedia."
+    "Just type /wiki [word] and I will look it up on Wikipedia.\n\n"
+    "You can find this bot source code in github with type /source"
 )
 message_4 = (
     "ℹ️ <b>Info</b>\n\n"
