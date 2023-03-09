@@ -13,7 +13,7 @@ class RoftConfiguration:
 
     __roft_version__ = '1.5.8'
 
-    ApiID = os.environ.get('API_ID', None)
+    ApiID = int(os.environ.get('API_ID', None))
     ApiHASH = os.environ.get('API_HASH', None) 
 
     TelegramBot = os.environ.get('TELEGRAM', None)
