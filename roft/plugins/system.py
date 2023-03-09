@@ -28,7 +28,7 @@ async def system(_, m: types.Message):
     chat = len(await get_served_chats())
     yues = datetime.datetime.fromtimestamp(psutil.boot_time()).strftime('%Y-%m-%d %H:%M:%S')
     text = (
-        f"📊 <b>YueDL Systems:</b>\n"
+        f"📊 <b>ZenDL Systems:</b>\n"
         f" • <b>Users:</b> <code>{user}</code>\n"
         f" • <b>Chats:</b> <code>{chat}</code>\n"
         f" • <b>CPU:</b> <code>{cpu}</code>\n"
