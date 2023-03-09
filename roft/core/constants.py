@@ -32,7 +32,7 @@ message_4 = (
     "🆚 Version<b>:</b> {} | 📣 Channel<b>:</b> @yueblog"
 )
 # download module 
-message_5 = "🔍 <b>Loading...</b>"
+message_5 = "🔍 <b>Sabar...</b>"
 message_6 = "To download a song do /song [Song name]"
 message_7 = (
     "{}\n\n"
@@ -65,7 +65,7 @@ message_25 = (
 message_26 = "🔍 <b>No results found, please try again.</b>"
 # TikTok Module
 message_27 = "To download a tiktok video do /tiktok [TikTok URL]"
-message_28 = "• Via @Yuedlbot"
+message_28 = "• Via @zenconvert_bot"
 message_29 = "🔍 <b>No results found, please try again.</b>"
 message_30 = "Sorry, I was unable to get information about this file.\nTry again later or send another link."
 
@@ -153,7 +153,7 @@ keyboard = (
         [
             [
                 types.InlineKeyboardButton(text='📮 Help', callback_data='self_help'),
-                types.InlineKeyboardButton(text='📣 Channel', url='https://t.me/yueblog')
+                types.InlineKeyboardButton(text='📣 Channel', url='https://t.me/ZennXSupport')
             ]
         ]
     )
