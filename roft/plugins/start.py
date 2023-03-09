@@ -39,7 +39,7 @@ async def help(_, m: types.Message):
 
 @self.on_message(filters.command('source'))
 async def source(_, m: types.Message):
-    text = 'https://github.com/Shin-yue/YueDL'
+    text = 'https://github.com/'
     await m.reply_text(text)
 
 
