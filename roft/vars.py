@@ -7,20 +7,23 @@
 # Vars of the bot
 
 import os
+import dotenv
 
 
 class RoftConfiguration:
 
+    dotenv.load_dotenv()
+
     __roft_version__ = '1.5.8'
 
-    ApiID = int(os.environ.get('API_ID', None))
-    ApiHASH = os.environ.get('API_HASH', None) 
+    ApiID = int(os.getenv('API_ID', None))
+    ApiHASH = os.getenv('API_HASH', None) 
 
-    TelegramBot = os.environ.get('TELEGRAM', None)
-    SpecialUsers = int(os.environ.get('CREATOR_ID', None))
+    TelegramBot = os.getenv('TELEGRAM', None)
+    SpecialUsers = int(os.getenv('CREATOR_ID', None))
 
-    MongoDatabaseURI = os.environ.get('DATABASE_URI', None)
-    LogGroupChatID = int(os.environ.get('LOG_CHAT_ID', None)) 
+    MongoDatabaseURI = os.getenv('DATABASE_URI', None)
+    LogGroupChatID = int(os.getenv('LOG_CHAT_ID', None)) 
 
     MusicDurationLimit = int(os.getenv("MusicDurationLimit", "3600"))
     CommandPrefixesBOT = list(os.getenv("CommandPrefixesBOT", '. / !').split())
