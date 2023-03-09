@@ -20,9 +20,9 @@ lyrical = {}
 async def lyrics(_, m: types.Message):
     if len(m.command) < 2:
         text = (
-            "To get lyrics of the song you want, "
-            "you must type the title or artist of the song.\n"
-            "Example:\n"
+            "Untuk mendapatkan lirik yang kamu mau, "
+            "kamu hanya perlu ketik /lyrics.\n"
+            "Contoh:\n"
             "1. /lyrics Justin Bieber\n"
             "2. /lyrics Justin Bieber What do you mean"
         )
