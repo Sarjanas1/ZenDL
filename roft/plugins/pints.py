@@ -45,8 +45,8 @@ async def pinterest(_, m: types.Message):
 async def tiktok(_, m: types.Message):
     if len(m.command) < 2:
         text = (
-            'You must send the correct url to get video from TikTok.\n'
-            'Example:\n'
+            'Anda harus mengirimkan url yang benar untuk mendapatkan video dari tiktok.\n'
+            'Contoh:\n'
             '1. https://vm.tiktok.com/nq431N/\n'
             '2. https://www.tiktok.com/@avani/video/6810857914052398342\n'
         )
