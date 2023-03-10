@@ -33,7 +33,7 @@ def extract_info(instance: yt_dlp.YoutubeDL, url: str, download=True):
     return instance.extract_info(url, download)
 
 
-@self.on_message(command('song'))
+@self.on_message(command('lagu'))
 @check_user_status
 async def song(_, m: types.Message):
     if len(m.command) < 2:
@@ -233,7 +233,7 @@ async def download_cb(_, callback: types.CallbackQuery):
     thumb = io.BytesIO((await http.get(yt['thumbnail'])).content)
     thumb_name = 'thumbnail.png'
  
-    await callback.message.edit('⌛ <b>Sending...</b>') 
+    await callback.message.edit('⌛ <b>Sabar...</b>') 
     await self.send_chat_action(
         chat_id=callback.message.chat.id,
         action=enums.ChatAction.UPLOAD_AUDIO
@@ -327,7 +327,7 @@ async def video_db(_, callback: types.CallbackQuery):
     shutil.rmtree(tempdir, ignore_errors=True)
 
 
-@self.on_callback_query(filters.regex(pattern=r'close'))
+@self.on_callback_query(filters.regex(pattern=r'tutup'))
 async def close_cb(_, callback: types.CallbackQuery):
     cb_data = callback.data.strip()
     cb_nano = cb_data.split(None, 1)[1]
