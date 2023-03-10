@@ -33,7 +33,7 @@ message_4 = (
 )
 # download module 
 message_5 = "🔍 <b>Sabar...</b>"
-message_6 = "Untuk mendownload lagu, lakukan /song [Song name]"
+message_6 = "Untuk mendownload lagu, lakukan /lagu [Judul lagu]"
 message_7 = (
     "{}\n\n"
     "<b>1.</b> <i>{}</i>\n<b>2.</b> <i>{}</i>\n<b>3.</b> <i>{}</i>\n<b>4.</b> <i>{}</i>\n<b>5.</b> <i>{}</i>\n"
@@ -62,7 +62,7 @@ message_25 = (
    "<b>Mengunduh Pinterest</b>\n"
    "<a href='https://t.me/ZennXSupport'>Channel</a> | <a href='https://t.me/onlybionn'>Developer</a>"
 )
-message_26 = "🔍 <b>No results found, please try again.</b>"
+message_26 = "🔍 <b>Tidak ada hasil yang ditemukan, silakan coba lagi.</b>"
 # TikTok Module
 message_27 = "Untuk mengunduh video tiktok, lakukan /tiktok [TikTok URL]"
 message_28 = "• Donwload Via [zenDL](https://t.me//zencovert_bot)"
