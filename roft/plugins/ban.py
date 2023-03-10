@@ -73,7 +73,7 @@ async def superban(_, m: types.Message):
         text_in_chat = (
             f'🚷 <b>#Log User Superbanned!</b>\n'
             f'👤 User: {target_user.mention()} [<code>{target_user.id}</code>]\n'
-            f'🏷️ Reason: {reason if reason else "Other"}\n'
+            f'🏷️ Alasan: {reason if reason else "Other"}\n'
             f'💭 Affected: <code>{number_chat}</code>\n'
             f'🧑🏻‍🔧 Operator: {m.from_user.mention()} [<code>{m.from_user.id}</code>]'
         )
