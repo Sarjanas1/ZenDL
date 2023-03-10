@@ -14,7 +14,7 @@ async def start(_, m: types.Message):
     user = await self.get_me()
     usrn = user.username
     if m.chat.type != enums.ChatType.PRIVATE:
-        text = f'<a href="https://t.me/{usrn}?start=help">Commands explanation.</a>'
+        text = f'<a href="https://t.me/{usrn}?start=help">Penjelasan perintah.</a>'
         await self.send_message(m.chat.id, text, disable_web_page_preview=True) 
         return
     if len(m.text.split()) > 1:
