@@ -5,7 +5,7 @@ message_1 = (
      "Untuk mengetahui lebih lanjut tentang cara menggunakan saya, tekan tombol '📮 <b>Bantuan</b>'."
 )
 message_2 = "💭 Halo {}!"
-pesan_3 = (
+message_3 = (
      "📮 <b>Bantuan</b>\n\n"
      "<b>Perintah YouTube:</b>\n"
      "Cukup ketik /lagu [judul lagu]"
@@ -153,7 +153,7 @@ keyboard = (
         [
             [
                 types.InlineKeyboardButton(text='📮 Help', callback_data='self_help'),
-                types.InlineKeyboardButton(text='📣 Channel', url='https://t.me/ZennXSupport')
+                types.InlineKeyboardButton(text='📣 Update', url='https://t.me/ZennXSupport')
             ]
         ]
     )
