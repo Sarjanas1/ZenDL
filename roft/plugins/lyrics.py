@@ -15,16 +15,16 @@ api = lyricsgenius.Genius(vars.GeniusLyricsAPI)
 
 lyrical = {}
 
-@self.on_message(filters.command("lyrics"))
+@self.on_message(filters.command("lirik"))
 @check_user_status
 async def lyrics(_, m: types.Message):
     if len(m.command) < 2:
         text = (
             "Untuk mendapatkan lirik yang kamu mau, "
-            "kamu hanya perlu ketik /lyrics.\n"
+            "kamu hanya perlu ketik /lirik.\n"
             "Contoh:\n"
-            "1. /lyrics Justin Bieber\n"
-            "2. /lyrics Justin Bieber What do you mean"
+            "1. /lirik Justin Bieber\n"
+            "2. /lirik Justin Bieber What do you mean"
         )
         return await self.send_message(m.chat.id, text)
 
@@ -43,7 +43,7 @@ async def lyrics(_, m: types.Message):
     caption = f"<a href='{r.url}'>{r.title} - {artist}</a>\n{lyrics}"
     
     content = f"""<p align="center"><a href="#"><img src="{r.song_art_image_url}" width="100"></a></p>"""
-    results = content + f"{lyrics}\n-\nVia @Yuedlbot"
+    results = content + f"{lyrics}\n-\nVia @zenconvert_bot"
     contents = results.replace("\n", "<br/>")
     telegraphurl = post_telegraph(f"{artist} - {r.title}", contents)
 
