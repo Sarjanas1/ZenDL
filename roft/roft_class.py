@@ -39,7 +39,7 @@ class RoftTelegramBot(Client):
         self.start_time = time.time()
 
         log.info(
-            "YueDL music running with Pyrogram v%s (Layer %s) started on @%s. Hi!",
+            "zenDL music running with Pyrogram v%s (Layer %s) started on @%s. Hi!",
             vers,
             self.me.username,
         )
@@ -57,4 +57,4 @@ class RoftTelegramBot(Client):
         )
     async def stop(self):
         await super().stop()
-        log.warning("YueDL Stopped")
+        log.warning("zenDL Stopped")
