@@ -69,8 +69,8 @@ async def tiktok(_, m: types.Message):
         await message_wait.delete()  
     else:
         text = (
-            'You sent the wrong link to the post, please send the correct link.\n'
-            'Example:\n'
+            'Anda mengirim tautan yang salah ke pos, harap kirimkan tautan yang benar.\n'
+            'Contoh:\n'
             '1. https://vm.tiktok.com/nq431N/\n'
             '2. https://www.tiktok.com/@avani/video/6810857914052398342\n'
         )
