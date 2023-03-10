@@ -12,7 +12,7 @@ from roft.core.api.wikipedia import WikipediaContent
 @check_user_status
 async def wikipedia(_, m: types.Message):
     if len(m.command) != 2:
-        text = 'Send me any word and I will look it up on Wikipedia.'
+        text = 'Kirimkan saya kata apa pun dan saya akan mencarinya di Wikipedia.'
         return await m.reply_text(text)
 
     enums = m.text.split(" ", 1)[1]
@@ -20,7 +20,7 @@ async def wikipedia(_, m: types.Message):
     try:
         await self.send_message(m.chat.id, WikipediaContent(content))           
     except Exception as e:
-        return await m.reply_text('The encyclopedia has no information about it.')
+        return await m.reply_text('Ensiklopedia tidak memiliki informasi tentang itu.')
 
 
 @self.on_message(filters.command('imdb'))
@@ -28,10 +28,10 @@ async def imbd(_, m: types.Message):
     if ' ' in m.text:
         val, title = m.text.split(None, 1)
         movies = await search_movie(title, bulk=True)
-        i = await m.reply_text('🔍 <b>Searching...</b>')
+        i = await m.reply_text('🔍 <b>Mencari...</b>')
 
         if not movies:
-            return await i.edit('❌ <b>No result found.</b>')
+            return await i.edit('❌ <b>Tidak ada hasil yang ditemukan.</b>')
 
         keyb = [
             [
@@ -42,9 +42,9 @@ async def imbd(_, m: types.Message):
                     for movie in movies  
                     
         ]
-        await i.edit('🎬 This is the Imdb result I found.', reply_markup=types.InlineKeyboardMarkup(keyb))       
+        await i.edit('🎬 Ini adalah hasil Imdb yang saya temukan.', reply_markup=types.InlineKeyboardMarkup(keyb))       
     else:
-        return await m.reply_text('Give me a movie or series name.')
+        return await m.reply_text('Beri saya nama film atau serial.')
 
 
 @self.on_callback_query(filters.regex('^imdb'))
@@ -63,7 +63,7 @@ async def imdbcb(_, c: types.CallbackQuery):
         ImdbCaption = (
             "<b>Title:</b> <a href={url}>{title}</a>\n<b>Type:</b> {kind}\n<b>Genre:</b> {genres}\n"
             "<b>A.K.A:</b> {aka}\n\n<b>Duration:</b> {runtime} minutes\n<b>Rating:</b> {rating} (<code>{votes}</code> votes)\n"
-            "<b>Realese Date:</b> {release_date}\n<b>Certificates:</b> {certificates}\n\n<b>Writers:</b> {writer}\n<b>Director:</b> {director}\n<b>Countries:</b> {countries}\n<b>Languages:</b> {languages}\n"
+            "<b>Release date:</b> {release_date}\n<b>Certificat:</b> {certificates}\n\n<b>Writers:</b> {writer}\n<b>Director:</b> {director}\n<b>Countries:</b> {countries}\n<b>Languages:</b> {languages}\n"
         ) 
         caption = ImdbCaption.format(
             title = imdb['title'],
@@ -86,7 +86,7 @@ async def imdbcb(_, c: types.CallbackQuery):
             **locals()
         )
     else:
-        caption = '❌ <b>No result found.</b>'
+        caption = '❌ <b>Tidak ada hasil yang ditemukan.</b>'
 
     if imdb.get('poster'):
         try:
