@@ -65,7 +65,7 @@ message_25 = (
 message_26 = "🔍 <b>Tidak ada hasil yang ditemukan, silakan coba lagi.</b>"
 # TikTok Module
 message_27 = "Untuk mengunduh video tiktok, lakukan /tiktok [TikTok URL]"
-message_28 = "• Donwload Via [zenDL](https://t.me/zencovert_bot)"
+message_28 = "• Donwload Via [zenDL](https://t.me/zenconvert_bot)"
 message_29 = "🔍 <b>Tidak ada hasil yang ditemukan, silakan coba lagi.</b>"
 message_30 = "Maaf, saya tidak dapat memperoleh informasi tentang file ini.\Coba lagi nanti atau kirim tautan lain."
 
