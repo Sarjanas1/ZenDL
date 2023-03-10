@@ -33,7 +33,7 @@ message_4 = (
 )
 # download module 
 message_5 = "🔍 <b>Sabar...</b>"
-message_6 = "Untuk mendownload lagu, lakukan /lagu [Judul lagu]"
+message_6 = "Untuk mendownload lagu, ketik /lagu [Judul lagu]"
 message_7 = (
     "{}\n\n"
     "<b>1.</b> <i>{}</i>\n<b>2.</b> <i>{}</i>\n<b>3.</b> <i>{}</i>\n<b>4.</b> <i>{}</i>\n<b>5.</b> <i>{}</i>\n"
