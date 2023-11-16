@@ -29,7 +29,7 @@ message_4 = (
     "ℹ️ <b>Info</b>\n\n"
      "Zen adalah bot yang dikembangkan di <b>Python3</b>"
      " dan menggunakan <a href='https://github.com/pyrogram/pyrogram'>Pyrogram</a> sebagai framework dengan MongoDB sebagai database.\n\n"
-     "🆚 Versi<b>:</b> {} | 📣 Saluran<b>:</b> @ZennXSupport"
+     "🆚 Versi<b>:</b> {} | 📣 Saluran<b>:</b> @zenitsuupdate"
 )
 # download module 
 message_5 = "🔍 <b>Sabar...</b>"
