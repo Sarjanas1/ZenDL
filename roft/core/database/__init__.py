@@ -14,7 +14,7 @@ if vars.MongoDatabaseURI is None:
         'Database not found, please add the mongo uri database'
     )
     self_get = self.get_me()
-    usernamee = usernamee = zendlbot
+    usernamee = zendlbot
 
     MongoAsync = AsyncIOMotorClient(MongoDB)
     MongoSyncs = MongoClient(MongoDB)
