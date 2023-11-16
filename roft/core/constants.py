@@ -60,12 +60,12 @@ message_23 = "Untuk mendapatkan media pinterest, lakukan /pints [Pinterest URL]"
 message_24 = "⌛ <b>Tunggu...</b>"
 message_25 = (
    "<b>Mengunduh Pinterest</b>\n"
-   "<a href='https://t.me/ZennXSupport'>Channel</a> | <a href='https://t.me/onlybionn'>Developer</a>"
+   "<a href='https://t.me/zenitsuupdate'>Channel</a> | <a href='https://t.me/fearznolimit'>Developer</a>"
 )
 message_26 = "🔍 <b>Tidak ada hasil yang ditemukan, silakan coba lagi.</b>"
 # TikTok Module
 message_27 = "Untuk mengunduh video tiktok, lakukan /tiktok [TikTok URL]"
-message_28 = "• Donwload Via [zenDL](https://t.me/zenconvert_bot)"
+message_28 = "• Donwload Via [zenDL](https://t.me/zendlbot)"
 message_29 = "🔍 <b>Tidak ada hasil yang ditemukan, silakan coba lagi.</b>"
 message_30 = "Maaf, saya tidak dapat memperoleh informasi tentang file ini.\Coba lagi nanti atau kirim tautan lain."
 
@@ -153,7 +153,7 @@ keyboard = (
         [
             [
                 types.InlineKeyboardButton(text='📮 Help', callback_data='self_help'),
-                types.InlineKeyboardButton(text='📣 Update', url='https://t.me/ZennXSupport')
+                types.InlineKeyboardButton(text='📣 Update', url='https://t.me/zenitsuupdate')
             ]
         ]
     )
