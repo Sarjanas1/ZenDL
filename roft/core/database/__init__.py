@@ -7,14 +7,14 @@ from roft.vars import vars
 
 
 MongoDB = (
-    'mongodb+srv://rizexx:bdg12345..@cluster0.qzxaj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    'mongodb+srv://bion:Rextor99@cluster0.hebibln.mongodb.net/?retryWrites=true&w=majority'
 )
 if vars.MongoDatabaseURI is None:
     logger.warning(
         'Database not found, please add the mongo uri database'
     )
     self_get = self.get_me()
-    usernamee = self_get.username
+    usernamee = usernamee = zendlbot
 
     MongoAsync = AsyncIOMotorClient(MongoDB)
     MongoSyncs = MongoClient(MongoDB)
